@@ -1,38 +1,257 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*:focus{
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  position: relative;
+  background: #27272a;
+  font-family: 'roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #27272a;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 2.5vw;
+}
+
+.toggle-btn{
+  width: 20px;
+  height: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-btn span{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  background: #fffdfd;
+}
+
+.toggle-btn span:nth-child(1){
+  top: 0;
+}
+
+.toggle-btn span:nth-child(3){
+  top: 100%;
+}
+
+.logo{
+  height: 30px;
+  margin: -1px 30px 0;
+  background-position: center;
+}
+
+.search-box{
+  position: relative;
+  max-width: 500px;
+  width: 50%;
+  height: 35px;
+  display: flex;
+}
+
+.search-bar{
+  width: 85%;
+  height: 100%;
+  border: 2px solid #3f3f46;
+  background-color: hsl(0deg 0% 9%);
+  padding: 0 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.search-btn{
+  width: 15%;
+  height: 80%;
+  /* background: #f0f0f0; */
+  /* border: 2px solid #242121; */
+  margin-top: 3px;
+  padding-left: 9px;
+  border-left: none;
+  filter: invert();
+}
+
+.search-btn img{
+  height: 100%;
+}
+
+.user-options{
+  height: 35px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.user-options .icon{
+  height: 75%;
+  margin-right: 30px;
+  cursor: pointer;
+  filter: invert();
+}
+
+.sig{
+  border: 2px solid rgb(2, 134, 223);
+  width: 92px;
+  height: 37px;
+  padding-top: 3px;
+  padding-left: 19px;
+  color: rgb(2, 134, 223);
+}
+
+.user-dp{
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-dp img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.side-bar{
+  position: fixed;
+  top: 60px;
+  left: 0;
+  min-width: 250px;
+  width: 250px;
+  height: calc(100vh - 60px);
+  background-color : #27272a;
+  padding-right: 10px;
+}
+
+.links{
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
   color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.links img{
+  height: 25px;
+  margin-right: 20px;
+  filter: invert();
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links:hover,
+.links.active{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.seperator{
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.filters{
+  position: fixed;
+  left: 250px;
+  top: 60px;
+  width: calc(100% - 250px);
+  height: 60px;
+  background: #27272a;
+  border-top: 1px solid #3f3f46;
+  border-bottom: 1px solid #3f3f46;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.filters::-webkit-scrollbar{
+  display: none;
+}
+
+.filter-options{
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: #3f3f46;
+  border: 1px solid #3f3f46;
+  text-transform: capitalize;
+  margin-right: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.filter-options.active{
+  color: #242424;
+  background: white;
+}
+
+/*  */
+
+.video-container{
+  width: calc(100% - 250px);
+  margin-top: 120px;
+  margin-left: 250px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 20px 5px;
+  overflow-x: hidden;
+}
+
+.video{
+  min-height: 250px;
+  height: auto;
+}
+
+.thumbnail{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.content{
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.channel-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.title{
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+.channel-name{
+  font-size: 14px;
+  margin: 2px 0;
+  color: #979797;
 }
