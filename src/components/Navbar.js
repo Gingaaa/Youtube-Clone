@@ -19,8 +19,8 @@ export default function Navbar() {
         </div>
         <div className="user-options">
           <img src="mic.png" className="icon" alt="" />
-          <img src="grid.png" class="icon" alt="" />
-          <img src="setting.png" class="icon" alt="" />
+          <img src="grid.png" className="icon" alt="" />
+          <img src="setting.png" className="icon" alt="" />
           <div className="sig">signup</div>
         </div>
       </nav>
@@ -64,32 +64,176 @@ export default function Navbar() {
         </a>
       </div>
 
-      <div class="filters">
-        <button class="filter-options active">all</button>
-        <button class="filter-options">CSS</button>
-        <button class="filter-options">web development</button>
-        <button class="filter-options">python</button>
-        <button class="filter-options">entertainment</button>
-        <button class="filter-options">marvel</button>
-        <button class="filter-options">javascript</button>
-        <button class="filter-options">artificial intelligence</button>
-        <button class="filter-options">machine learning</button>
-        <button class="filter-options">trending</button>
+      <div className="filters">
+        <button className="filter-options active">all</button>
+        <button className="filter-options">CSS</button>
+        <button className="filter-options">web development</button>
+        <button className="filter-options">python</button>
+        <button className="filter-options">entertainment</button>
+        <button className="filter-options">marvel</button>
+        <button className="filter-options">javascript</button>
+        <button className="filter-options">artificial intelligence</button>
+        <button className="filter-options">machine learning</button>
+        <button className="filter-options">trending</button>
       </div>
 
-      <div class="video-container">
-        {/* <div class="video">
-          <img src="img/profile-pic.png" class="thumbnail" alt="" />
-          <div class="content">
-            <img src="img/profile-pic.png" class="channel-icon" alt="" />
-            <div class="info">
-              <h4 class="title">
+      <div className="video-container">
+        <div className="video">
+         <a href="https://www.youtube.com/watch?v=Vhldo272vO8"><img src="china.jpg" className="thumbnail" alt="" /></a>
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
                 youtube clone 2021 | create working youtube clone
               </h4>
-              <p class="channel-name">modern web</p>
+              <p className="channel-name">modern web</p>
             </div>
           </div>
-        </div> */}
+        </div>
+        <div className="video">
+        <a href="https://www.youtube.com/watch?v=Vhldo272vO8"><img src="china.jpg" className="thumbnail" alt="" /></a>
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+        <a href="https://www.youtube.com/watch?v=Vhldo272vO8"><img src="china.jpg" className="thumbnail" alt="" /></a>
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
+        <div className="video">
+          <img src="china.jpg" className="thumbnail" alt="" />
+          <div className="content">
+            <img src="buck.jpg" className="channel-icon" alt="" />
+            <div className="info">
+              <h4 className="title">
+                youtube clone 2021 | create working youtube clone
+              </h4>
+              <p className="channel-name">modern web</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
