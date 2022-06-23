@@ -98,7 +98,7 @@ export default function Navbar() {
               <h4 className="title">
                 youtube clone 2021 | create working youtube clone
               </h4>
-              <p className="channel-name">modern web</p>
+              <p className="channel-name">modern webmaster</p>
             </div>
           </div>
         </div>
